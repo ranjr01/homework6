@@ -40,7 +40,7 @@ def main():
     # Feature B: Calculate Team Effort-Hour Capacity
     sprint_days, team_member_details = get_sprint_days_and_team_details()
     effort_hour_capacity = calculate_effort_hour_capacity(sprint_days, team_member_details)
-    print(f"Effort Hour Capacity: {effort_hour_capacity} hours")
+    print(f"\nTotal Effort Hour Capacity for the Team: {effort_hour_capacity} hours")
 
 if __name__ == "__main__":
     main()
