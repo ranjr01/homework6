@@ -1,6 +1,5 @@
 # main.py
 from velocity_calculator import calculate_velocity
-
 def get_previous_sprints_points():
     try:
         points_str = input("Enter previous sprint points (comma-separated): ")
