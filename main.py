@@ -42,6 +42,5 @@ def main():
     effort_hour_capacity = calculate_effort_hour_capacity(sprint_days, team_member_details)
     print(f"Effort Hour Capacity: {effort_hour_capacity} hours")
 
-
 if __name__ == "__main__":
     main()
