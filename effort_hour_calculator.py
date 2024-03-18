@@ -1,6 +1,6 @@
-# effort_hour_calculator.py
 def calculate_effort_hour_capacity(sprint_days, team_member_details):
     if sprint_days <= 0:
+        print("Invalid sprint days. Sprint days should be a positive integer.")
         return 0
 
     total_effort_minutes_team = 0
@@ -16,6 +16,10 @@ def calculate_effort_hour_capacity(sprint_days, team_member_details):
 
         total_effort_minutes_team += total_effort_minutes_person
 
-        # total_effort_hours += (sprint_days - days_off - committed_days) * available_hours
+    # Check if total effort minutes for the team is negative, return 0 in that case
+    if total_effort_minutes_team < 0:
+        print("Total available effort minutes for the team is negative, returning 0.")
+        return 0
+
     print(f"Total Available Effort-Minutes for Team: {total_effort_minutes_team} minutes")
     return total_effort_minutes_team
